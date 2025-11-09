@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Breaking News: Technology Shaping the Future</title>
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background-image: url(./images\ \(2\).jpg);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px; 
+    background-size: cover;
+    background-position: left;
+
+  }
+
+  .news-box {
+    background-image: url(./images\ \(1\).jpg);
+    background-size: cover;
+    background-position: center;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    overflow: hidden;
+    position: relative;
+    margin-top: 50px;
+    animation: ww 10s infinite alternate-reverse;
+  }
+  @keyframes ww {
+    0%{transform: rotate(0deg) scale(100%);}
+    50%{transform: rotate(360deg)scale(00%);}
+  }
+  .header-bar {
+    background: #4a2a2a;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+  }
+  a{
+    animation: aa 5s infinite alternate;
+  }
+@keyframes aa {
+    0%{color: red;}
+    25%{color: orange;}
+    50%{color: yellow;}
+    75%{color: green;}
+    100%{color: blue;}
+}
+  .dots {
+    display: flex;
+    gap: 6px;
+    margin-right: 10px;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.4);
+  }
+
+  .tab-title {
+    font-weight: 500;
+    flex-grow: 1;
+  }
+
+  .content {
+    padding: 40px 60px;
+    text-align: center;
+  }
+
+  h1 {
+    font-family: 'Playfair Display', serif;
+    color: #1a4e91;
+    font-size: 28px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    text-shadow: 2px 2px 2px #333; 
+  }
+a:hover{
+    text-shadow: 1px 1px 2px #333;
+}
+  p {
+    text-align: left;
+    color: #333;
+    line-height: 1.8;
+    font-size: 17px;
+    margin-bottom: 18px;
+}
+p:hover{
+    text-shadow: 2px 2px 2px gray;
+} 
+  p span.first-letter {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 36px;
+    color: #d63031;
+    font-weight: bold;
+    float: left;
+    line-height: 1;
+    margin-right: 6px;
+  }
+  p span.s-letter {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 36px;
+    color: #28037d;
+    font-weight: bold;
+    float: left;
+    line-height: 1;
+    margin-right: 6px;
+  }
+p{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+  p::first-line{
+    color: #8d5ffa;
+    font-weight: 700;
+    font-size: 1.1em;
+    font-style: italic ;
+  } 
+   a {
+    color: #0a53be;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    background-color: rgb(17, 19, 19); 
+    color: aquamarine;
+    cursor: pointer;
+  }
+
+  .footer {
+    text-align: center;
+    color: #777;
+    font-style: italic;
+    margin-top: 35px;
+  }
+
+  
+  #musicOverlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    font-size: 1.8rem;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    z-index: 9999;
+    animation: pulse 1.5s infinite;
+  }
+
+  @keyframes pulse {
+    0% { opacity: 0.5; transform: scale(0.95); }
+    50% { opacity: 1; transform: scale(1); }
+    100% { opacity: 0.5; transform: scale(0.95); }
+  }
+    h1 {
+      font-size: 22px;
+      
+
+    }
+    #musicOverlay {
+      font-size: 1.2rem;
+      padding: 20px;
+    }
+    #a{
+      margin-right: 15px;
+      border: 1px solid black;
+      padding: 5px 10px;
+      border-radius: 90px;
+    }
+    #b{
+      margin-left: 400px;
+      border: 1px solid black;
+      padding: 5px 10px;
+      border-radius: 90px;
+    }
+  
+</style>
+</head>
+<body>
+  <audio id="bgmusic" src="./hello.mp3" loop preload="auto"></audio>
+
+  
+  <div class="news-box">
+    <div class="header-bar">
+      <div class="dots">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+      <div class="tab-title">News Article</div>
+    </div>
+    <div class="content">
+      <h1>Breaking News: Technology Shaping the Future</h1>
+
+      <p><span class="first-letter">L</span> orem ipsum dolor sit, amet consectetur adipisicing elit. Harum ut autem sapiente obcaecati ipsum. Dignissimos expedita, inventore minima quo in velit temporibus maiores quos, ratione esse voluptates adipisci labore totam.</p>
+
+      <p><span class="s-letter">L</span>orem ipsum dolor sit amet consectetur, adipisicing elit. Dolores possimus, illum repellat enim maiores dolorum ipsum quis mollitia iusto, ea natus excepturi molestias magni reprehenderit error voluptas totam vero expedita?</p>
+
+      <p><a href="https://www.google.com" target="_blank" id="a">Read More</a>  <a href="https://www.youtube.com" target="_blank" id="b">Visit Website</a></p>
+
+      <div class="footer">Thank you for reading!</div>
+    </div>
+  </div>
+
+  <script>
+  const overlay = document.getElementById('musicOverlay');
+  const bgmusic = document.getElementById('bgmusic');
+  function startMusic() {
+  bgmusic.play()
+  .then(() => {
+    overlay.style.display =('none');
+  })
+  .catch(err =>{
+    console.error(err);
+  });
+  
+document.body.removeEventListener('click',startMusic);
+document.body.removeEventListener('touchstart',startMusic);
+  }
+document.body.addEventListener('click',startMusic);
+document.body.addEventListener('touchstart',startMusic);
+
+  </script>
+
+</body>
+</html>

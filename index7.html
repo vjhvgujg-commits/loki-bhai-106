@@ -1,0 +1,212 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration Form</title>
+  <style>
+    body {
+      font-family:"Poppins", sans-serif;
+      animation: ho 10s infinite alternate;
+      background-size: cover;
+    }
+@keyframes ho{
+  from{background-image: url(a.jpeg);}
+  to{background-image: url(ae.jpeg);}
+}
+    .container {
+      width: 500px;
+      margin: 40px auto;
+      padding: 30px;
+      border: 2px solid #000;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      animation: spin 10s infinite alternate;
+      background-size: cover;
+    }
+
+    h2 {
+      text-align: center;
+      font-family: "Poppins", sans-serif;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      animation: er 10s infinite alternate;
+    }
+@keyframes er {
+  from{color: white;}
+  to{color:#FFEE5E;}
+}
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+    }
+
+    label {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="number"],
+    input[type="file"],
+    select,
+    textarea {
+      padding: 8px;
+      border: 1px solid #999;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .dob input {
+      width: 70px;
+      margin-right: 5px;
+    }
+
+    .inline {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .inline input[type="radio"],
+    .inline input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    .btn {
+      text-align: center;
+    }
+
+    input[type="submit"] {
+      background-color: #d44;
+      color: white;
+      border: none;
+      padding: 8px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background-color:#C0FFAC;
+    }
+    @keyframes spin {
+      from{color:brown;}
+      to{color:#72FF81;}
+      from{background-image: url(a.jpeg);}
+  to{background-image: url(ae.jpeg);}
+}
+    
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Student Registration Form</h2>
+
+    <div class="form-group">
+      <label>Roll no. :</label>
+      <input type="text" name="rollno">
+    </div>
+
+    <div class="form-group">
+      <label>Student name :</label>
+      <div class="inline">
+        <input type="text" name="fname" placeholder="First Name">
+        <input type="text" name="lname" placeholder="Last Name">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Father's name :</label>
+      <input type="text" name="fathername">
+    </div>
+
+    <div class="form-group">
+      <label>Date of birth :</label>
+      <div class="dob">
+        <input type="number" placeholder="Day" min="1" max="31">
+        <input type="number" placeholder="Month" min="1" max="12">
+        <input type="number" placeholder="Year" min="1900" max="2025">
+        <small>(DD-MM-YYYY)</small>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Mobile no. :</label>
+      <div class="inline">
+        +91 <input type="text" name="mobile" maxlength="10" style="width:80%;">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Email id :</label>
+      <input type="email" name="email">
+    </div>
+
+    <div class="form-group">
+      <label>Password :</label>
+      <input type="password" name="password">
+    </div>
+
+    <div class="form-group">
+      <label>Gender :</label>
+      <div class="inline">
+        <label><input type="radio" name="gender" value="male"> Male</label>
+        <label><input type="radio" name="gender" value="female"> Female</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Department :</label>
+      <div class="inline">
+        <label><input type="checkbox" name="dept" value="CSE"> CSE</label>
+        <label><input type="checkbox" name="dept" value="IT"> IT</label>
+        <label><input type="checkbox" name="dept" value="ECE"> ECE</label>
+        <label><input type="checkbox" name="dept" value="Civil"> Civil</label>
+        <label><input type="checkbox" name="dept" value="Mech"> Mech</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Course :</label>
+      <select name="course">
+        <option>---------------- Select Current Course's ----------------</option>
+        <option>B.Tech</option>
+        <option>B.Sc</option>
+        <option>BCA</option>
+        <option>MCA</option>
+        <option>M.Tech</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Student photo :</label>
+      <input type="file" name="photo">
+    </div>
+
+    <div class="form-group">
+      <label>City :</label>
+      <input type="text" name="city">
+    </div>
+
+    <div class="form-group">
+      <label>Address :</label>
+      <textarea rows="3" name="address"></textarea>
+    </div>
+
+    <div class="btn">
+      <input type="submit" value="Register">
+    </div>
+  </div>
+
+
+</body></html>
